@@ -1,5 +1,6 @@
 # По введенным пользователем координатам двух точек вывести уравнение прямой вида y = kx + b, проходящей через эти
 # точки
+# https://drive.google.com/file/d/1zmsVhsIlCTU7ZL80T4OQnL8UmV2qOG4z/view?usp=sharing
 
 print("Введите координаты первой точки:")
 x1 = float(input("x1 = "))
