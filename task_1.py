@@ -2,9 +2,9 @@
 
 num = int(input("Введите трехзначное число: "))
 
-ones = n % 10
-dozens = n % 100 // 10
-hundreds = n // 100
+ones = num % 10
+dozens = num % 100 // 10
+hundreds = num // 100
 
 sum = ones + dozens + hundreds
 mult = ones * dozens * hundreds
