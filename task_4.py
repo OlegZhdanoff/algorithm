@@ -1,4 +1,5 @@
 # Пользователь вводит две буквы. Определить, на каких местах алфавита они стоят, и сколько между ними находится букв.
+# https://drive.google.com/file/d/1zmsVhsIlCTU7ZL80T4OQnL8UmV2qOG4z/view?usp=sharing
 
 first = ord(input('Введите первую букву: '))
 second = ord(input('Введите вторую букву: '))
