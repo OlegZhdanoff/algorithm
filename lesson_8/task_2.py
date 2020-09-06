@@ -77,19 +77,16 @@ def haff(st: str):
         node_dict.append(Char_Node(None, node_dict[-2], node_dict[-1], node_dict[-2].weight + node_dict[-1].weight))
         char_freq[node_dict[-1]] = node_dict[-2].weight + node_dict[-3].weight
         char_freq = dict(sorted(char_freq.items(), key=lambda v: v[1], reverse=True))
-        print(char_freq)
-    print('*' * 50)
-    for el in node_dict:
-        if hasattr(el.value, 'count'):
-            print(el)
 
     print('*' * 50)
     char_tree = Tree()
     char_tree.root = node_dict.pop()
     char_tree.print_level_order(char_tree.root)
+
     print('*' * 50)
     for el in node_dict:
-        print(el)
+        if hasattr(el.value, 'count'):
+            print(el)
 
     res = ''
     for ch in st:
